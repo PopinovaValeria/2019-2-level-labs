@@ -41,8 +41,7 @@ def fill_edit_matrix(edit_matrix: tuple,
                 substitute = 0
             s_weight = edit_matrix[i - 1][j - 1] + substitute
             edit_matrix[i][j] = minimum_value([i_weight, r_weight, s_weight])
-    return list(edit_matrix)
-       
+    return list(edit_matrix)    
 
 
 def find_distance(original_word: str,
